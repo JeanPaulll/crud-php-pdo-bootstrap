@@ -1,0 +1,38 @@
+/*
+ Navicat Premium Data Transfer
+
+ Source Server         : localhost
+ Source Server Type    : MySQL
+ Source Server Version : 50616
+ Source Host           : localhost
+ Source Database       : pdo
+
+ Target Server Type    : MySQL
+ Target Server Version : 50616
+ File Encoding         : utf-8
+
+ Date: 08/25/2014 03:33:55 AM
+*/
+
+SET NAMES utf8;
+SET FOREIGN_KEY_CHECKS = 0;
+
+-- ----------------------------
+--  Table structure for `crudpdo`
+-- ----------------------------
+DROP TABLE IF EXISTS `crudpdo`;
+CREATE TABLE `crudpdo` (
+	`id` int(11) NOT NULL AUTO_INCREMENT,
+	`nome` varchar(255) DEFAULT NULL,
+	`email` varchar(255) DEFAULT NULL,
+	PRIMARY KEY (`id`)
+) ENGINE=`InnoDB` AUTO_INCREMENT=6 DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci ROW_FORMAT=COMPACT COMMENT='' CHECKSUM=0 DELAY_KEY_WRITE=0;
+
+-- ----------------------------
+--  Records of `crudpdo`
+-- ----------------------------
+BEGIN;
+INSERT INTO `crudpdo` VALUES ('1', 'Jean Paul', 'jeanweb.com.br'), ('3', 'Jean Paul 02', 'jeanweb.com.br'), ('4', 'Jean Paul 01', 'jeanpaulrodrigues@hotmail.com');
+COMMIT;
+
+SET FOREIGN_KEY_CHECKS = 1;
