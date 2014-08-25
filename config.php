@@ -1,5 +1,5 @@
 <?php
-
+//CONEXÃO PDO www.jeanweb.com.br
 $conn = 'mysql:host=localhost;dbname=pdo';
 
 try {
